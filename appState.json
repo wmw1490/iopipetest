@@ -43,7 +43,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "iopipetest/handler.py",
-        "code": "def handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "code": "from iopipe import IOpipe\n\n\n@iopipe\ndef handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
         "config": {
           "runtime": "python3.6",
           "handler": "handler",
@@ -93,10 +93,25 @@
         "shouldPersist": true,
         "displayOnly": false,
         "editable": true
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "IOPIPE_TOKEN",
+        "varValue": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZDhhZjA3Ni05MDJkLTRjN2EtYjBmZC1kZjJiMDE0NWM0YjMiLCJqdGkiOiJkMTM5ODRjOC1jOWQwLTRiZmUtYjgwNS1lNTYzZjg0ZjVjM2QiLCJpYXQiOjE1NzEyNjQ1NzEsImlzcyI6Imh0dHBzOi8vaW9waXBlLmNvbSIsImF1ZCI6Imh0dHBzOi8vaW9waXBlLmNvbSxodHRwczovL21ldHJpY3MtYXBpLmlvcGlwZS5jb20vZXZlbnQvLGh0dHBzOi8vZ3JhcGhxbC5pb3BpcGUuY29tIn0.pykl3paUV_pQBExIqdkCJMGoAGisakhXUQ_fLgA7A1c",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "iopipe": {
+          "name": "iopipe",
+          "version": "1.10.2",
+          "dev": false,
+          "language": "python"
+        }
+      }
     }
   },
   "PROJECT_META": {
@@ -106,7 +121,7 @@
     "projectRegion": "us-east-2",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1571332815762
+    "lastSave": 1571333042303
   },
   "VCS_STATE": {
     "provider": "GitHub",
