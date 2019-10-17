@@ -1,0 +1,118 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "3373dd43-49fd-42c2-a015-309ad15734ff": {
+        "id": "3373dd43-49fd-42c2-a015-309ad15734ff",
+        "parent": null,
+        "name": "iopipetest",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "5d1dc9b9-b9fc-45f2-95dd-c7162be7c163",
+          "b214b193-7970-43ed-8b5c-a6b616dc9ad6",
+          "b8883a7c-0214-457f-bcdb-cb3515100293"
+        ],
+        "isRemovable": false,
+        "filePath": "iopipetest"
+      },
+      "5d1dc9b9-b9fc-45f2-95dd-c7162be7c163": {
+        "id": "5d1dc9b9-b9fc-45f2-95dd-c7162be7c163",
+        "parent": "3373dd43-49fd-42c2-a015-309ad15734ff",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "iopipetest/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "b214b193-7970-43ed-8b5c-a6b616dc9ad6": {
+        "id": "b214b193-7970-43ed-8b5c-a6b616dc9ad6",
+        "parent": "3373dd43-49fd-42c2-a015-309ad15734ff",
+        "name": "handler.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "iopipetest/handler.py",
+        "code": "def handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "config": {
+          "runtime": "python3.6",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 256,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "b8883a7c-0214-457f-bcdb-cb3515100293": {
+        "id": "b8883a7c-0214-457f-bcdb-cb3515100293",
+        "parent": "3373dd43-49fd-42c2-a015-309ad15734ff",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "iopipetest/__init__.py",
+        "code": ""
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "3373dd43-49fd-42c2-a015-309ad15734ff",
+    "openFiles": [
+      "5d1dc9b9-b9fc-45f2-95dd-c7162be7c163",
+      "b214b193-7970-43ed-8b5c-a6b616dc9ad6"
+    ],
+    "currentFileId": "b214b193-7970-43ed-8b5c-a6b616dc9ad6",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "b214b193-7970-43ed-8b5c-a6b616dc9ad6",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/iopipetest",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "iopipetest",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1571332815762
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "iopipetest",
+      "url": "https://github.com/wmw1490/iopipetest"
+    }
+  }
+}
