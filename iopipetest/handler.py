@@ -33,7 +33,7 @@ def handler(event, context):
 
     # Connect to DynamoDB
     dynamodb = boto3.resource('dynamodb')
-    table = dynamodb.Table('QSO')
+    table = dynamodb.Table('RMS')
     # Attempt to insert into DynamoDB table
     try:
         table.put_item(Item={'QSOlocation': qsolocation, 'QSOdatetime': qsodatetime, \
