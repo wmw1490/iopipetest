@@ -1,5 +1,6 @@
 from iopipe import IOpipe
 
+iopipe = IOpipe()
 
 @iopipe
 def handler(event, context):

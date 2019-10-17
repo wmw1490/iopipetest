@@ -43,7 +43,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "iopipetest/handler.py",
-        "code": "from iopipe import IOpipe\n\n\n@iopipe\ndef handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "code": "from iopipe import IOpipe\n\niopipe = IOpipe()\n\n@iopipe\ndef handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
         "config": {
           "runtime": "python3.6",
           "handler": "handler",
@@ -121,7 +121,7 @@
     "projectRegion": "us-east-2",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1571333042303
+    "lastSave": 1571333302550
   },
   "VCS_STATE": {
     "provider": "GitHub",
